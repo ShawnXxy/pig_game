@@ -85,7 +85,7 @@ document.querySelector(".btn-hold").addEventListener("click",function(){
   //update the score and show in UI
   document.querySelector("#score-"+activePlayer).textContent=scores[activePlayer];
   //check if player won
-  if (scores[activePlayer]>=100){
+  if (scores[activePlayer]>=10){
     document.querySelector("#name-"+activePlayer).textContent="Winner!";
     ///stop the game and hide dice and button
     diceReset();
@@ -109,4 +109,6 @@ document.querySelector(".btn-new").addEventListener("click",function(){
   //reset buttons
   document.querySelector(".btn-roll").style.display="block";
   document.querySelector(".btn-hold").style.display="block";
+  //resent player
+  document.querySelector("#name-"+activePlayer).textContent="Player "+(activePlayer+1);
 });
