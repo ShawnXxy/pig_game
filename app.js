@@ -85,7 +85,7 @@ document.querySelector(".btn-hold").addEventListener("click",function(){
   //update the score and show in UI
   document.querySelector("#score-"+activePlayer).textContent=scores[activePlayer];
   //check if player won
-  if (scores[activePlayer]>=10){
+  if (scores[activePlayer]>=100){
     document.querySelector("#name-"+activePlayer).textContent="Winner!";
     ///stop the game and hide dice and button
     diceReset();
