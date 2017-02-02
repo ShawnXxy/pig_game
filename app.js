@@ -14,8 +14,8 @@ var scores=[0,0];
 var roundScore=0;
 var activePlayer=0;
 var dice;
-// console.log(dice);
-// change current score everytime dice get a random number
+// // change current score everytime dice get a random number
+// dice=Math.floor(Math.random()*6+1);
 // innerHTML可以加入css 样式，textContent保留原网页样式
 // querySelector选择 CSS样式.对于id样式可以使用getElemenById()
 document.querySelector("#current-" + activePlayer).textContent=dice;
@@ -111,4 +111,4 @@ document.querySelector(".btn-new").addEventListener("click",function(){
   document.querySelector(".btn-hold").style.display="block";
   //resent player
   document.querySelector("#name-"+activePlayer).textContent="Player "+(activePlayer+1);
-});
+});/*---end of btn-new function---*/
