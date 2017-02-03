@@ -107,6 +107,7 @@ document.querySelector(".btn-new").addEventListener("click",function(){
   document.getElementById("current-0").textContent="0";
   document.getElementById("current-1").textContent="0";
   roundScore=0;
+  scores=[0,0];
   //reset buttons
   document.querySelector(".btn-roll").style.display="block";
   document.querySelector(".btn-hold").style.display="block";
