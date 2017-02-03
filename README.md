@@ -9,6 +9,6 @@ GAME RULES:
 
 
 New rules add:
---add another dice
---lose all scores if rolls two 6 in a row
---add an input field to the HTML wher players can set the winning score
+- add another dice
+- lose all scores if rolls two 6 in a row
+- add an input field to the HTML wher players can set the winning score
