@@ -113,3 +113,9 @@ document.querySelector(".btn-new").addEventListener("click",function(){
   //resent player
   document.querySelector("#name-"+activePlayer).textContent="Player "+(activePlayer+1);
 });/*---end of btn-new function---*/
+
+//New rules add:
+//lose all scores if rolls two 6 in a row
+//add an input field to the HTML wher players can set the winning score
+//add another dice
+/*---to be continued---*/
