@@ -78,6 +78,7 @@ document.querySelector(".btn-roll").addEventListener("click",function(){
   //NEW RULE ADDED: lose all scores if two six in a row
   if (dice===6 && diceAdd===6){
     //all scores lost
+    alert("Player "+(activePlayer+1)+" rolled two 6 in a row! All scores lost!");
     scores[activePlayer]=0;
     document.querySelector("#score-"+activePlayer).textContent="0";
     nextPlayer();
@@ -91,6 +92,7 @@ document.querySelector(".btn-roll").addEventListener("click",function(){
   }/*---end of if (dice>1)---*/
   else{
     ////skip to next round and next player to move
+    alert("Player "+(activePlayer+1)+" rolled at least one 1! Lose scores this round!");
     nextPlayer();
   }/*---end of else---*/
 });/*---end of btn-roll function---*/
