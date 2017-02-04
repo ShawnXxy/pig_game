@@ -21,7 +21,6 @@ var dice;
 var diceAdd;/*---2nd dice added for new rule---*/
 
 // // change current score everytime along with dices getting random numbers
-// dice=Math.floor(Math.random()*6+1);
 /*--innerHTML可以加入css 样式，textContent保留原网页样式
 querySelector选择 CSS样式.对于id样式可以使用getElemenById()---*/
 document.querySelector("#current-" + activePlayer).textContent=dice;
@@ -33,6 +32,7 @@ function diceReset(){
   document.querySelector("#diceAdd").style.display="none";
 }
 diceReset();
+
 // 游戏起始分数为0
 document.getElementById("score-0").textContent="0";
 document.getElementById("score-1").textContent="0";
