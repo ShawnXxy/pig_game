@@ -34,10 +34,13 @@ function diceReset(){
 diceReset();
 
 // 游戏起始分数为0
-document.getElementById("score-0").textContent="0";
-document.getElementById("score-1").textContent="0";
-document.getElementById("current-0").textContent="0";
-document.getElementById("current-1").textContent="0";
+function init(){
+  document.getElementById("score-0").textContent="0";
+  document.getElementById("score-1").textContent="0";
+  document.getElementById("current-0").textContent="0";
+  document.getElementById("current-1").textContent="0";
+};/*---end of initiate function---*/
+init();
 
 ////create a function for skip to next round and next player to move
 function nextPlayer(){
@@ -133,10 +136,7 @@ document.querySelector(".btn-hold").addEventListener("click",function(){
 document.querySelector(".btn-new").addEventListener("click",function(){
   diceReset();
   //reset scores
-  document.getElementById("score-0").textContent="0";
-  document.getElementById("score-1").textContent="0";
-  document.getElementById("current-0").textContent="0";
-  document.getElementById("current-1").textContent="0";
+  init();
   roundScore=0;
   scores=[0,0];
   //reset buttons
